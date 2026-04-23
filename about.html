@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAD RDC - About</title>
+    <!-- Modern Fonts: Rajdhani for headings (industrial feel), Inter for readable body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <div class="loader">
+            <svg class="circuit-ring" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#3b5bdb" stroke-width="2"
+                    stroke-dasharray="20 10 5 10 50 20" stroke-linecap="round"></circle>
+                <circle cx="50" cy="50" r="35" fill="none" stroke="#39ff14" stroke-width="2"
+                    stroke-dasharray="30 15 10 20" stroke-linecap="round" class="inner-ring"></circle>
+                <circle cx="50" cy="5" r="3" fill="#3b5bdb"></circle>
+                <circle cx="95" cy="50" r="3" fill="#39ff14"></circle>
+                <circle cx="50" cy="95" r="3" fill="#3b5bdb"></circle>
+                <circle cx="5" cy="50" r="3" fill="#39ff14"></circle>
+            </svg>
+            <div class="loader-text">RDC</div>
+        </div>
+    </div>
+
+    <div class="background-elements">
+        <canvas id="particleCanvas"></canvas>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images.jpg" alt="Logo UAD RDC" class="logo-img">
+            <span class="logo-text">UAD RDC</span><span class="logo-dot">.</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join.html">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- 4. About Section -->
+        <section id="about" class="about-section container">
+            <div class="glass-panel about-panel">
+                <div class="panel-header">
+                    <h2>Tentang UAD RDC</h2>
+                    <p>Mengenal lebih dekat tim robotika unggulan FTI UAD</p>
+                </div>
+                <div class="about-content">
+                    <p><strong>Robotic Development Community (RDC)</strong> merupakan tim robot Fakultas Teknologi
+                        Industri Universitas Ahmad Dahlan (FTI UAD) yang bergerak secara khusus di bidang riset dan
+                        pengembangan robotika serta UAV. Tim ini secara aktif dan konsisten berkompetisi di tingkat
+                        nasional, seperti Kontes Robot Indonesia (KRI) dan Kontes Robot Terbang Indonesia (KRTI).</p>
+
+                    <p>RDC memfasilitasi mahasiswa dalam studi perancangan, pemrograman, dan pembuatan robot baik untuk
+                        aplikasi industri maupun modul praktikum. Fokus dari komunitas ini adalah meningkatkan
+                        kompetensi anggota pada bidang mikrokontroler, mekatronika, desain sistem elektronika analog &
+                        digital, serta <em>embedded system</em>.</p>
+
+                    <div class="divisions">
+                        <h3>Divisi Robot RDC</h3>
+                        <div class="division-grid">
+                            <div class="division-card">
+                                <h4>Lanange Jagad</h4>
+                                <p>Kontes Robot Seni Tari Indonesia (KRSTI)</p>
+                            </div>
+                            <div class="division-card">
+                                <h4>R-SCUAD</h4>
+                                <p>Robo Soccer Universitas Ahmad Dahlan</p>
+                            </div>
+                            <div class="division-card">
+                                <h4>Fire - X</h4>
+                                <p>Divisi Kontes Robot Sepak Bola (KRSBI-B)</p>
+                            </div>
+                            <div class="division-card">
+                                <h4>SAGOTRA</h4>
+                                <p>Divisi Robot Tematik & Inovasi</p>
+                            </div>
+                            <div class="division-card">
+                                <h4>Al Jazari, Kingphoenix & Djayanta</h4>
+                                <p>Divisi Robot Spesifik Lainnya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

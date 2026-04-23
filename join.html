@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAD RDC - Join Us</title>
+    <!-- Modern Fonts: Rajdhani for headings (industrial feel), Inter for readable body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <div class="loader">
+            <svg class="circuit-ring" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#3b5bdb" stroke-width="2"
+                    stroke-dasharray="20 10 5 10 50 20" stroke-linecap="round"></circle>
+                <circle cx="50" cy="50" r="35" fill="none" stroke="#39ff14" stroke-width="2"
+                    stroke-dasharray="30 15 10 20" stroke-linecap="round" class="inner-ring"></circle>
+                <circle cx="50" cy="5" r="3" fill="#3b5bdb"></circle>
+                <circle cx="95" cy="50" r="3" fill="#39ff14"></circle>
+                <circle cx="50" cy="95" r="3" fill="#3b5bdb"></circle>
+                <circle cx="5" cy="50" r="3" fill="#39ff14"></circle>
+            </svg>
+            <div class="loader-text">RDC</div>
+        </div>
+    </div>
+
+    <div class="background-elements">
+        <canvas id="particleCanvas"></canvas>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images.jpg" alt="Logo UAD RDC" class="logo-img">
+            <span class="logo-text">UAD RDC</span><span class="logo-dot">.</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join.html">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container justify-center" id="join" style="padding-top: 4rem;">
+            <!-- 3. Formulir Pendaftaran dengan Glassmorphism -->
+            <section class="form-section">
+                <div class="glass-panel">
+                    <div class="panel-header">
+                        <h2>Pendaftaran Anggota</h2>
+                        <p>Mulai perjalanan inovasimu di sini</p>
+                    </div>
+                    <form id="registrationForm"
+                        onsubmit="event.preventDefault(); alert('Pendaftaran berhasil dikirim!');">
+                        <div class="form-group">
+                            <label for="fullName">Nama Lengkap</label>
+                            <input type="text" id="fullName" name="fullName" required
+                                placeholder="Masukkan nama lengkap">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nim">NIM</label>
+                            <input type="text" id="nim" name="nim" required placeholder="Masukkan NIM">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="major">Jurusan</label>
+                            <input type="text" id="major" name="major" required placeholder="Masukkan jurusan Anda">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expertise">Keahlian</label>
+                            <select id="expertise" name="expertise" required>
+                                <option value="" disabled selected>Pilih Keahlian</option>
+                                <option value="mechanic">Mekanik</option>
+                                <option value="programmer">Programmer</option>
+                                <option value="uiux">UI/UX</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivation">Motivasi Singkat</label>
+                            <textarea id="motivation" name="motivation" rows="3" required
+                                placeholder="Ceritakan motivasi Anda bergabung..."></textarea>
+                        </div>
+
+                        <!-- 4. Tombol: Efek glow saat di-hover -->
+                        <button type="submit" class="glow-button"><span>DAFTAR SEKARANG</span></button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
